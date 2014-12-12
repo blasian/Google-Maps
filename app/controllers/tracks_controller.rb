@@ -5,9 +5,10 @@ class TracksController < ApplicationController
   # GET /tracks.json
   def index
     @tracks = Track.all
-    @hash = Gmaps4rails.build_markers(@users) do |user, marker|
-      marker.lat user.latitude
-      marker.lng user.longitude
+    @hash = Gmaps4rails.build_markers(@tracks) do |track, marker|
+      marker.lat track.latitude
+      marker.lng track.longitude
+      marker.infowindow track.title
     end
   end
 
