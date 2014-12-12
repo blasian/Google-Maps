@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @track.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @track.longitude %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @track.address %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @track.title %>
+</p>
+
+<%= link_to 'Edit', edit_track_path(@track) %> |
+<%= link_to 'Back', tracks_path %>
