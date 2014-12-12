@@ -1,5 +1,4 @@
 Google-Maps
-
 ======
 
 Uses geocoder gem to convert address strings into longitude and latitude coordinates.
